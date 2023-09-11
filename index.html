@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 4 JavaScript</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+      }
+      table {
+        border: 20px solid transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="frm">
+      <table style="width: 500px; background-color: aqua; border: 1px solid; text-align: center">
+        <tr>
+          <th colspan="2">Form Toko Online</th>
+        </tr>
+        <tr>
+          <td><label for="nama">Nama Pelanggan:</label></td>
+          <td><input type="text" id="nama" name="nama" /></td>
+        </tr>
+        <tr>
+          <td><label for="produk">Pilih Produk:</label></td>
+          <td>
+            <select id="produk" name="produk">
+              <option value="TV">TV</option>
+              <option value="AC">AC</option>
+              <option value="Kulkas">Kulkas</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="jumlah">Banyak Item Produk:</label></td>
+          <td><input type="number" id="jumlah" name="jumlah" /></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="Beli" id="proses" name="proses" /></td>
+        </tr>
+      </table>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>
