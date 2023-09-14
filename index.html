@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 5 JS</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      class gempa {
+        constructor(lokasi, skala) {
+          this.lokasi = lokasi;
+          this.skala = skala;
+        }
+        dampak() {
+          let dampak_a;
+          if (this.skala >= 0 && this.skala <= 2) {
+            dampak_a = 'tidak terasa';
+          } else if (this.skala > 2 && this.skala <= 4) {
+            dampak_a = 'bangunan retak-retak';
+          } else if (this.skala > 4 && this.skala <= 6) {
+            dampak_a = 'bangunan roboh';
+          } else {
+            dampak_a = 'banguna roboh dan berdampak sunami';
+          }
+          document.write('Lokasi Gempa : ', this.lokasi);
+          document.write('<br>Skala : ', this.skala);
+          document.write('<br>Dampak : ', dampak_a);
+          document.write('<br>--------------<br>');
+        }
+      }
+
+      //membuat informasi gempa
+      let gempa1 = new gempa('jepang', 3);
+      let gempa2 = new gempa('jerman', 4);
+      let gempa3 = new gempa('spanyol', 5);
+      let gempa4 = new gempa('portugal', 6);
+      let gempa5 = new gempa('brazil', 2);
+
+      //menggunakan fungsi dampak untuk mencetak
+      gempa1.dampak();
+      gempa2.dampak();
+      gempa3.dampak();
+      gempa4.dampak();
+      gempa5.dampak();
+    </script>
+  </body>
+</html>
