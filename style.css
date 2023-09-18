@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.col {
+  width: 50%;
+  height: 150px;
+  background-color: #a991f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  box-shadow: 10px 10px 10px #37cdbe;
+}
+.profil {
+  width: 100px;
+  height: 50px;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 10px slateblue;
+}
+.moto {
+  margin: 20px;
+  width: 100px;
+  height: 50px;
+  background-color: rgb(255, 183, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 10px slateblue;
+}
+.keahlian {
+  width: 100px;
+  height: 50px;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 10px slateblue;
+}

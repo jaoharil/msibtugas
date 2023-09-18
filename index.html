@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 6 js</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <div class="col" id="col">
+      <h2>Silahkan Klick 👉</h2>
+      <div class="profil" id="prof">Profil</div>
+      <div class="moto" id="hidup">Moto Hidup</div>
+      <div class="keahlian" id="ahli">Keahlian</div>
+    </div>
+
+    <script>
+      // Objek data untuk setiap bidang
+      let profile = { Nama: 'Jaoharil Maknun', Alamat: 'Lombok Timur', Kampus: 'Universitas Teknologi Mataram' };
+      let moto = { Hidup: 'Tidak ada hal yang sia-sia dalam belajar karena ilmu akan bermanfaat pada waktunya' };
+      let keahlian = { Teknologi: 'Masih pemula' };
+
+      prof.addEventListener(
+        'click',
+        function (event) {
+          $(this).css(
+            {
+              background: "url('img/joril.jpg')",
+            },
+            alert(' Profile:\nNama: ' + profile.Nama + '\nAlamat: ' + profile.Alamat + '\nKampus: ' + profile.Kampus)
+          );
+        },
+        false
+      );
+      hidup.addEventListener(
+        'click',
+        function (event) {
+          alert(' Moto Hidup:\n' + moto.Hidup);
+        },
+        false
+      );
+      ahli.addEventListener(
+        'click',
+        function (event) {
+          alert('Keahlian:\nTeknologi: ' + keahlian.Teknologi);
+        },
+        false
+      );
+    </script>
+  </body>
+</html>
