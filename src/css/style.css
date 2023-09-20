@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+#content {
+  float: left;
+  width: 100%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+
+  padding: 20px;
+  margin-top: 20px;
+  width: 350px;
+  background-image: linear-gradient(45deg, #fbda61 0%, #ff5acd 100%);
+}
+header {
+  display: inline;
+  height: 200px;
+}
+.jumbotron {
+  height: 460px;
+  font-size: 20px;
+  padding: 60px;
+  background-color: #fbda61;
+  background-image: linear-gradient(45deg, #fbda61 0%, #ff5acd 100%);
+
+  text-align: center;
+  color: white;
+}
+.jumbotron img {
+  width: 280px;
+  height: 350px;
+  position: absolute;
+  padding-right: 50px;
+}
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav {
+  background-color: #ff5acd;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+footer {
+  width: 100%;
+  padding: 20px;
+  color: white;
+  background-color: #00a2c6;
+
+  text-align: center;
+  font-weight: bold;
+}
